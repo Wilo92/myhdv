@@ -1,0 +1,56 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    line-height: 30px;
+    color: white;
+}
+
+header ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+main{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+main div{
+    max-width: 480px;
+}
+
+.galeria{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.naranja{
+    background-color: orangered;
+}
+
+.fresa{
+    background-color: rgb(110, 43, 43);
+}
+
+.pina{
+    background-color: yellow;
+    color: black;
+}
+
+.uva{
+    background-color: purple;
+}
+

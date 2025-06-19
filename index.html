@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My_hdv.com</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/aab2c8fc51.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header>
+        <div id="header">
+            <div class="container">
+                <nav id="Header">
+                    <img src="images/logo.png" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#about"><b>Acerca de mi</b></a></li>
+                        <li><a href="#contact"><b>Contacto</b></a></li>
+                        <li><a href="pagina_projects/projects.html"><b>Proyectos</b></a></li>
+                        <!-- Cambio de idioma con banderas emoji -->
+                        <li><a href="index2.html" title="English version">🇬🇧</a></li>
+                        <i class="fas fa-times" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fas fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-txt">
+                    <h1>Wilmer F. Restrepo</h1><br>
+                    <h2>Hola, yo soy <span>Wilo.</span> <br> Abierto a nuevas oportunidades.</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <article>
+        <section>
+            <div>
+                <!--codigo para crear las dos columnas en la seccion acerca de mi-->
+                <div id="about">
+                    <div class="container">
+                        <div class="row">
+                            <div class="about-col-1">
+                                <img src="images/wilmer.jpg">
+                            </div>
+                            <div class="about-col-2">
+                                <h1 class="sub-title">Acerca de mi.</h1>
+                                <p>Bienvenidos a mi perfil personal. Soy ingeniero de sistemas de Colombia y actualmente
+                                    estoy cursando estudios avanzados de especialización en desarrollo de software. Me
+                                    apasiona mi trabajo y me gusta aprender cada día más, conectando con personas e
+                                    instituciones que me aportan valor.
+
+                                    Soy autodidacta, así que aprender sobre tecnología es mi mayor pasión.
+                                    <br><br>
+                                    En cada uno de los subtítulos conocerás más sobre mis conocimientos y experiencias.
+                                </p>
+                                <!---titulos de la secion about me-->
+                                <div class="tab-titles">
+                                    <p class="tab-links active-tab" onclick="opentab('education')">Educación</p>
+                                    <p class="tab-links" onclick="opentab('copnia')">Copnia</p>
+                                    <p class="tab-links" onclick="opentab('experience')">Experiencia</p>
+                                    <p class="tab-links" onclick="opentab('supervision')">Supervisiónes</p>
+
+                                    <p class="tab-links" onclick="opentab('cursos')">Cursos</p>
+
+                                </div>
+                                <div class="tab-contents active-tab" id="education">
+                                    <ul>
+                                        <li><span><b>ESPECIALIZACIÓN EN DESARROLLO DE SOFTWARE</b></span><br>
+                                            <b>Universidad Catolica de Pereira (En curso)</b>
+                                        </li>
+                                        <li><span><b>INGENIERO DE SISTEMAS</b></span><br>Certificado en Administración
+                                            de Sistemas Operativos de Código Abierto con certificación Linux:
+                                            Implementación de servicios de infraestructura de TI utilizando sistemas
+                                            operativos GNU/LINUX NETHSERVER.<br><b>Universidad Nacional Abierta y a
+                                                Distancia
+                                                de colombia -
+                                                UNAD
+                                                CEAD
+                                                Dosquebradas.</b>
+                                        </li>
+                                        <li><span><b>TÉCNICO ADMINISTRADOR DE EMPRESAS</b></span><br><b>Inedsa Institute
+                                                -
+                                                Dosquebradas/Risaralda/Colombia</b>
+                                        </li>
+                                        <li><span><b>TECNÓLOGO EN GESTIÓN DEL CICLO DE VIDA DEL PRODUCTO
+                                                    (PLM)</b></span><br><b>Servicio Nacional de Aprendizaje - SENA
+                                                COLOMBIA -
+                                                Centro de Diseño e Innovación Tecnológica</b>
+                                        </li>
+                                        <li><span><b>TÉCNICO DE SISTEMAS, REDES Y
+                                                    MANTENIMIENTO</b></span><br><b>Centro Tecnico Colombiano -
+                                                CETECO</b>
+                                        </li>
+                                        <li><span><b>DESARROLLADOR WEB FULLSTACK</b></span><br><b>Aprendamos Web -
+                                                Pereira/Risaralda/
+                                                Colombia</b></li>
+                                    </ul>
+                                </div>
+
+                                <div class="tab-contents" id="copnia">
+                                    <ul>
+
+                                        <li><span><b>CONCEJO NACIONAL DE INGENIEROS - COLOMBIA</b></span><br>Tarjeta
+                                            Profesional
+                                            #
+                                            <br>091122-0711399
+                                        </li>
+
+                                    </ul>
+                                </div>
+
+                                <div class="tab-contents" id="experience">
+                                    <ul>
+                                        <li><span><b>TECNICO OPERATIVO 314-7 GRUPO DE CONTROL FISCAL INTEGRADO
+                                                </b></span><br>Contraloria
+                                            General del Risaralda - Govertment Entity (November 2024 - Actualmente)
+                                        </li>
+                                        <li><span><b>TECNICO OPERATIVO 314-5 PROCESO DE GESTIÓN TECNOLÓGICA
+                                                </b></span><br>Contraloria
+                                            General del Risaralda - Govertment Entity (November 2017 - 2024)
+                                        </li>
+                                        <li><span><b>VENDEDOR DE TIENDA DE CERÁMICA</b></span><br>Almacenes Corona S.A
+                                            (February
+                                            2016-August 2016)</li>
+                                        <li><span><b>AUXILIAR LOGISTICO</b></span><br>Garajes Prefabricados (October
+                                            2015
+                                            -
+                                            November
+                                            2016)</li>
+                                        <li><span><b>AUXILIAR DE LOGÍSTICA DE TRANSPORTE</b></span><br>Scribe
+                                            de
+                                            Colombia</li>
+                                        <li><span><b>AUXILIAR LOGISTICO</b></span><br>Harinera del valle sa. (April 2012
+                                            -
+                                            July
+                                            2013)</li>
+
+                                    </ul>
+                                </div>
+
+                                <div class="tab-contents" id="supervision">
+                                    <ul>
+                                        <li><span><b>SUPERVISION CO1.PCCNTR.5621212
+                                                    CPS-CGR-36-2023</b></span><br>"Adquisición, implementación y puesta
+                                            en marcha de una herramienta tecnológica que permite la gestión de
+                                            auditorías basadas en riesgos, centralizando y gestionando la información
+                                            generada en el proceso de auditoría (planeación, ejecución y comunicación de
+                                            resultados), incluyendo los papeles de trabajo y el seguimiento de los
+                                            planes de mejora para su aplicación en las auditorías realizadas por las
+                                            entidades fiscalizadoras superiores territoriales en el proceso de
+                                            supervisión fiscal de los procesos de auditoría."
+                                        </li>
+                                        <li><span><b>SUPERVISION CO1.PCCNTR.5313412-2023.</b></span><br>
+                                            Adquisición de dos servidores, licencia de Windows Server 2022 y 50
+                                            licencias de acceso, licencia de backup de VMware y Veeam, implementación de
+                                            almacenamiento en red, soporte y servicio.
+
+                                        </li>
+                                        <li><span><b>SUPERVISIÓN CGR-IPMC-013-SEPTIEMBRE 2020</b></span><br>Brindamos un
+                                            servicio profesional de mantenimiento preventivo y correctivo de todos los
+                                            componentes informáticos, servidores, computadoras, impresoras, dispositivos
+                                            de red y sus componentes.
+
+
+                                        </li>
+                                        <li><span><b>SUPERVISIÓN PRESTACIÓN DE SERVICIOS NO. CPS-06-2020.</b></span><br>
+                                            Brindar servicios de apoyo para fortalecer los canales de comunicación y la
+                                            interacción entre la Contraloría General de Risaralda y la ciudadanía en
+                                            general a través de una estrategia de TIC y gobierno digital.
+
+                                        </li>
+                                        <li><span><b>SUPERVISIÓN CGR-SAMC-05-2019</b></span><br>Suministro, modificación
+                                            e instalación de cableado estructurado de voz y datos, cableado UTP CAT7 en
+                                            el edificio de la Contraloría General de Risaralda. </li>
+
+                                        <li><span><b>SUPERVISIÓN CGR-IPMC-09-2019.</b></span><br>Servicio profesional
+                                            para realizar mantenimiento preventivo y correctivo de todos los componentes
+                                            informáticos, servidores, PC, impresoras, dispositivos de red y sus
+                                            componentes.
+                                        </li>
+
+
+                                    </ul>
+                                </div>
+
+
+
+                                <div class="tab-contents" id="cursos">
+                                        <ul>
+                                            <li>-Curso presencial desarrollo Web Back-End</li>
+                                            <li>-Curso presencial desarrollo Web Front-End</li>
+                                            <li>-Cisco Networking academy NDG Linux Essentials Course</li>
+                                            <li>-Cisco Networking academy NDG Linux Unhatched</li>
+                                            <li>-Fundamentos de ciberseguridad</li>
+                                            <li>-Conexion y proteccion redes y seguridad de redes</li>
+                                            <li>-Herramientas del oficio linux y SQL</li>
+                                            <li>-CCNAv7 Switching, Routing and Wireless Essentials</li>
+                                            <li>-Terminal y linea de comandos</li>
+                                            <li>-Haz sonar la alarma deteccion y respuesta</li>
+                                            <li>-Activos vulnerabilidades y amenazas</li>
+                                            <li>-Automatiza las tareas de ciberseguridad con python</li>
+                                            <li>-Ponlo en practica preparate para trabajos de ciberseguridad</li>
+                                            <li>-Google AI esentiasl</li>
+                                            <li>Cloud Computing 101</li>
+                                            <li>-Curso profesional de scrum</li>
+                                            <li>-Curso de introducción a seguridad informatica</li>
+                                            <li>-Introducción a AWS: redes, gobernanza y machine learning</li>
+                                            <li>-Concepto Básico de diseño de interfaces</li>
+                                            <li>-Curso de introduccion al diseño</li>
+                                            <li>-Bitcoin y Blockchain</li>
+                                            <li>-Desing thinking con Minds Garage</li>
+                                            <li>-Introduccion al diseño</li>
+                                            <li>-Glosario de terminos de diseño</li>
+                                            <li>-Fundamentos de IA para data y machine learning</li>
+                                            <li>-Vocabulary and Expressions </li>
+                                            <li>-Introduccion a JAVA SE</li>
+                                            <li>-Introduccion a la administracion de servidores Linux</li>
+                                            <li>-Curso basico de photoshop</li>
+                                            <li>-Introduccion a la terminal y linea de comandos</li>
+                                            <li>-Herramientas informaticas Excel</li>
+                                            <li>-Herramientas informaticas word</li>
+                                            <li>-Herramientas informaticas Windows</li>
+                                            <li>-Detección del fraude en caja</li>
+                                            <li>-Automatismos residenciales e industriales</li>
+                                            <li>-Administracion de inventarios</li>
+                                            <li>-Actualización en contratación estatal SECOP II</li>
+                                            <li>-Actualizacion en gestión pública</li>
+                                            <li>-Gerencia del Riesgo</li>
+                                            <li>-Procesos de calidad en las areas administrativas y talento humano</li>
+                                            <li>-Actualizacion en SECOP II</li>
+                                            <li>-Seminario contratación estatal</li>
+
+                                        </ul>
+                                    </div>
+
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!------------services seccion--------->
+
+            <div id="services">
+                <div class="container">
+                    <h1 class="sub-title">Conocimientos</h1>
+                    <div class="services-List">
+                        <div>
+                            <i class="fa-solid fa-code"></i>
+                            <h2>Desarrollador de software jr.</h2>
+                            <p>Conocimiento de tecnologías front-end y back-end, desarrollo de páginas web y
+                                aplicaciones.</p>
+
+                            <a href="#"></a>
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                            <h2>Mantenimiento y reparación</h2>
+                            <p>Soporte, mantenimiento preventivo y correctivo de software y hardware en laptops,
+                                servidores, pc de escritorio, sistemas de almacenamiento, switches, impresoras
+                                multifuncionales, celulares y tablets.
+                            </p>
+
+                            <a href="#"></a>
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-user-tie"></i>
+                            <h2>Administrador de red</h2>
+                            <p>Configuración y administración de centros de datos, virtualización de servidores. <br>
+                                Administración y diseño de redes locales, Administración de sistemas de información.
+                                <br>
+                                Directorio activo de Windows, DNS, llamadas, políticas de grupo.<br>
+                                Seguridad de la información. <br>
+                                terminal y línea de comandos de Linux <br>
+                                Soporte a usuario final.
+
+                            </p>
+
+                            <a href="#"></a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+
+            <!--contact-->
+
+            <div id="contact">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="contact-left">
+                            <h1 class="sub-title">contacto.</h1>
+
+                            <p><i class="fa-solid fa-location-dot"></i>Mz 16 Cs 10 villa del campo
+                                -Dosquebradas/Risaralda/Colombia</p>
+                            <p><i class="fa-solid fa-mobile"></i>3003553762</p>
+                            <p><i class="fa-solid fa-envelope-open"></i>wilmerrestrepoo@hotmail.com</p>
+
+                            <div class="social-icons">
+                                <a href="https://github.com/Wilo92" target="_blank" rel="noopener noreferrer"><i
+                                        class="fa-brands fa-github"></i></a>
+                                <a href="https://www.linkedin.com/in/wilmer-restrepo-830544242/" target="_blank"
+                                    rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+                                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><i
+                                        class="fa-brands fa-square-facebook"></i></a>
+                                <a href="https://x.com/?lang=en" target="_blank" rel="noopener noreferrer"><i
+                                        class="fa-brands fa-square-x-twitter"></i></a>
+                            </div>
+                            <a href="images/my-cv.pdf" download class="btn btn2" target="_blank">MY HOJA DE VIDA</a>
+                        </div>
+
+
+
+
+
+                        <div class="contact-right">
+                            <section>
+                                <iframe class="map"
+                                    src="https://www.google.com/maps?q=4.844699,-75.669688&hl=es;z=16&output=embed"
+                                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </section>
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+                <!--slider section-->
+
+                <div class="slider">
+                    <div class="slide-track">
+                        <div class="slide">
+                            <img src="images/1.png.png" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="images/2.png" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="images/3.png" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="images/4.png" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="images/5.png" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="images/6.png" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="images/7.png" alt="">
+                        </div>
+
+                        <div class="slide">
+                            <img src="images/8.png" alt="">
+                        </div>
+
+                        <div class="slide">
+                            <img src="images/9.png" alt="">
+                        </div>
+
+                        <div class="slide">
+                            <img src="images/10.png" alt="">
+                        </div>
+
+                        <div class="slide">
+                            <img src="images/11.png" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="images/12.png" alt="">
+                        </div>
+
+                        <div class="slide">
+                            <img src="images/13.png" alt="">
+                        </div>
+
+                        <div class="slide">
+                            <img src="images/14.png" alt="">
+                        </div>
+
+                        <div class="slide">
+                            <img src="images/15.png" alt="">
+                        </div>
+
+                        <div class="slide">
+                            <img src="images/16.png" alt="">
+                        </div>
+
+                        <div class="slide">
+                            <img src="images/17.png" alt="">
+                        </div>
+
+                        <div class="slide">
+                            <img src="images/18.png" alt="">
+                        </div>
+
+
+
+
+                        <!---se repiten las mismas imagenes de arriba-->
+
+                        <div class="slide">
+                            <img src="images/2.png" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="images/3.png" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="images/4.png" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="images/5.png" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="images/6.png" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="images/7.png" alt="">
+                        </div>
+
+                        <div class="slide">
+                            <img src="images/8.png" alt="">
+                        </div>
+
+                        <div class="slide">
+                            <img src="images/9.png" alt="">
+                        </div>
+
+                        <div class="slide">
+                            <img src="images/10.png" alt="">
+                        </div>
+
+                        <div class="slide">
+                            <img src="images/11.png" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="images/12.png" alt="">
+                        </div>
+
+                        <div class="slide">
+                            <img src="images/13.png" alt="">
+                        </div>
+
+                        <div class="slide">
+                            <img src="images/14.png" alt="">
+                        </div>
+
+                        <div class="slide">
+                            <img src="images/15.png" alt="">
+                        </div>
+
+                        <div class="slide">
+                            <img src="images/16.png" alt="">
+                        </div>
+
+                        <div class="slide">
+                            <img src="images/17.png" alt="">
+                        </div>
+
+                        <div class="slide">
+                            <img src="images/18.png" alt="">
+                        </div>
+
+                    </div>
+                </div>
+
+
+        </section>
+
+        <!---pie de pagina-->
+
+    </article>
+
+    <div class="copyright">
+        <p>Created by @Wilo<br><i class="fa-solid fa-glasses"></i></p>
+    </div>
+    </div>
+
+
+
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

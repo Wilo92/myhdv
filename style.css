@@ -1,0 +1,577 @@
+/*para formatear css*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+/*PARA SUAVISAR EL MOVIMIENTO DE LAS INSTRUCCIONS DE MOUSE
+ES PARA VER MEJOR HACIA DONDE SE MUEVEN LOS LINKS*/
+html {
+  scroll-behavior: smooth;
+  /*______________________________________________________*/
+}
+
+/*color de fondo de todo el documento html Y COLOR DE LA FUENTE*/
+body {
+  background: rgba(5, 164, 247, 255);
+  color: white;
+  padding: 0 0;
+}
+
+/*______________________________________________________*/
+/*para posicionar foto principal*/
+#header {
+  width: 100%;
+  height: 90vh;
+  background-image: url(images/background.png);
+  background-size: cover;
+  background-position: center;
+}
+
+#Header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  /* Asegura que quede encima del resto */
+  background-color: black;
+  /* O el color de fondo que uses */
+}
+
+.header-txt {
+  width: 100%;
+  max-width: auto;
+  padding: 9rem 1rem;
+  box-sizing: border-box;
+  position: static;
+  top: unset;
+  left: unset;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  margin-left: 10%;
+}
+
+/*______________________________________________________*/
+
+/*CSS PARA DEFINIR LAS MARGENES INTERIOES DEL CONTENERDOR Y DE 
+TODAS LAS SECCIONES ESTE SE ENCUENTRA EN TODAS*/
+.container {
+  padding: 10px 5%;
+}
+
+/*______________________________________________________*/
+/*CSS PARA LA BARRA DE NAVEGACION*/
+nav {
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+  height: 100px;
+  margin: 0px;
+}
+
+/*______________________________________________________*/
+/*CSS PARA DEFINIR EL TAMAÑO DEL LOGO*/
+.logo {
+  width: 150px;
+}
+
+/*______________________________________________________*/
+
+/*CSS PARA LAS OPCIONES DEL MENU SUPERIOR*/
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 30px;
+}
+
+
+
+nav ul li a {
+  color: white;
+  font-size: 24px;
+  position: relative;
+}
+
+
+nav ul li a::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: orangered;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 1s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+/*______________________________________________________*/
+
+/*diseño del texto que acompaña el encabezado donde esta el lobo*/
+
+.header-txt {
+  margin-top: 10%;
+  font-size: 22px;
+}
+
+.header-txt h1 {
+  font-size: 35px;
+  margin-top: 20px;
+}
+
+/*Color azul de la etiqueta wilo*/
+.header-txt h2 span {
+  color: rgba(5, 164, 247, 255);
+}
+
+/*______________________________________________________*/
+
+/*css para las dos columnas donde se encuentra about me*/
+
+#about {
+  padding: 30px 0;
+  color: black;
+
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/*______________________________________________________*/
+
+.about-col-1 {
+  flex-basis: 35%;
+}
+
+/*redondea el marco de las imagenees del about me*/
+.about-col-1 img {
+  width: 90%;
+  border-radius: 100px;
+}
+
+.about-col-2 {
+  flex-basis: 65%;
+}
+
+/*css para ajustar los menus de about me*/
+.sub-title {
+  font-size: 35px;
+  font-weight: 600;
+  color: #fff;
+}
+
+
+.about-col-2 p {
+  font-size: 16.5px;
+  text-align: justify;
+}
+
+/*______________________________________________________*/
+
+
+/*CSS PARA LOS TITLES DE LA SECCION SOBRE MI*/
+.tab-titles {
+  display: flex;
+  margin: 20px 0 30px;
+}
+
+.tab-links {
+  color: white;
+  margin-right: 40px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+
+.tab-links::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: orangered;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 1.5s;
+}
+
+.tab-links.active-link::after {
+  width: 100%;
+}
+
+/*CSS PARA EL CONTENIDO DE CADA UNA DE LAS SECCIONES SOBRE MI*/
+.tab-contents ul li {
+  list-style: none;
+  margin: 10px 0;
+  font-size: 16.5px;
+  text-align: justify;
+}
+
+.tab-contents ul li span {
+  color: orangered;
+  /*--color: gray;--*/
+  font-size: 16px;
+}
+
+.tab-contents {
+  display: none;
+}
+
+.tab-contents.active-tab {
+  display: block;
+}
+
+/*--------seccion de servicios----*/
+
+#services {
+  padding: 20px 0;
+  background-color: black;
+}
+
+.services-List {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 30px;
+  margin-top: 50px;
+}
+
+.services-List div {
+  background: #262626;
+  padding: 40px;
+  font-size: 16.5px;
+  font-weight: 300;
+  border-radius: 20px;
+  transition: background 1s, transform 1s;
+}
+
+.services-List div i {
+  font-size: 50px;
+  margin-bottom: 30px;
+  color: rgba(5, 164, 247, 255);
+}
+
+.services-List div h2 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.services-List div a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 12px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.services-List div:hover {
+  background: orangered;
+  transform: translateY(-40px);
+}
+
+.btn {
+  display: block;
+  margin: 50px auto;
+  width: fit-content;
+  border: 1px solid #ff004f;
+  padding: 14px 50px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: white;
+  transition: background 0.5s;
+}
+
+.btn:hover {
+  background: red;
+}
+
+/*-----------contact--------------*/
+
+#contact {
+  background-color: black;
+}
+
+.contact-left {
+  flex-basis: 40%;
+}
+
+.contact-right {
+  flex-basis: 60%;
+}
+
+.contact-left p {
+  margin-top: 30px;
+}
+
+.contact-left p i {
+  color: orangered;
+  margin-right: 15px;
+  font-size: 25px;
+}
+
+.social-icons {
+  margin-top: 30px;
+}
+
+.social-icons a {
+  text-decoration: none;
+  font-size: 30px;
+  margin-right: 15px;
+  color: #ababab;
+  display: inline-block;
+  transition: transform 0.5s;
+}
+
+.social-icons a:hover {
+  color: orangered;
+  transform: translateY(-20px);
+}
+
+.btn.btn2 {
+  /*display: inline-block;*/
+  background: red;
+
+
+}
+
+.slider {
+  width: 100px;
+  height: 100%;
+}
+
+/*slider section*/
+
+.slider {
+  width: 75vw;
+  height: auto;
+  margin: auto;
+  padding-top: 30px;
+  overflow: hidden;
+}
+
+.slider .slide-track {
+  display: flex;
+  /*--se pone el tamaño de las imagenes y la cantidad de las mismas para que funciones el slider automatico-----*/
+  -webkit-animation: scroll 10s linear infinite;
+  width: calc(200px * 16);
+}
+
+.slider .slide {
+  width: 200px;
+}
+
+.slider .slide img {
+  width: 100%;
+}
+
+@keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  100% {
+    -webkit-transform: translateX(-200px * 7);
+    transform: translateX(calc(-200px * 7));
+  }
+}
+
+/*CONFIGURACION DEL PIE DE PAGINA*/
+.copyright {
+  width: 100%;
+  height: 2px;
+  text-align: center;
+  padding: 5px 0;
+  background: rgba(5, 164, 247, 255);
+  font-weight: 100;
+  margin-top: 1px;
+}
+
+.copyright i {
+  color: red;
+}
+
+/*---mapa configuration-----------------*/
+.map {
+  filter: grayscale(30%) invert(80%) contrast(100%);
+}
+
+
+
+
+/*------------- configuración para sitio responsivo ------------------*/
+
+/* Oculta los íconos con clase .fas dentro del nav en pantallas grandes */
+nav .fas {
+  display: none;
+}
+
+/* Estilos base (móviles y tamaños pequeños) */
+@media only screen and (max-width: 600px) {
+
+  nav ul.active{
+    right: 0;
+  }
+
+  /* Cambia la imagen de fondo del header */
+  #header {
+    background-image: url(images/background2.png);
+    background-size: cover;
+    background-position: center;
+  }
+
+  /* Ajusta el menú hamburguesa y su visibilidad */
+  nav .fas {
+    display: block;
+    font-size: 1.6rem;
+    /*position: absolute;*/
+    top: 1.5rem;
+    left: 1.5rem;
+    cursor: pointer;
+    z-index: 3;
+  }
+
+  /* Ajusta el margen superior y el tamaño de fuente del texto en el header */
+  .header-txt {
+    max-width: 95vw;
+    padding: 1.5rem 0.5rem;
+    font-size: 1.1rem;
+    margin-top: 70px;
+    margin-left: 1%;
+    text-align: left;
+  }
+
+  /* Ajusta el tamaño de fuente del título principal en el header */
+  .header-txt h1 {
+    font-size: 1.3rem;
+    margin-top: 0.5rem;
+ 
+  }
+
+  /* Estilos para la lista de navegación en móvil */
+  nav ul {
+    background: orangered;
+    position: fixed;
+    top: 0;
+    right: -80vw;
+    width: 80vw;
+    max-width: 300px;
+    min-width: 150px;
+    height: 60vh;
+    padding-top: 4rem;
+    z-index: 2;
+    transition: right 0.5s ease;
+  }
+
+  /* Elementos del menú */
+  nav ul li {
+    display: block;
+    margin: 1.5rem;
+  }
+
+  nav ul .fas {
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    cursor: pointer;
+  }
+
+  /* Título secundario */
+  .sub-title {
+    font-size: 1.5rem;
+  }
+
+  /* Columnas about a 100% */
+  .about-col-1,
+  .about-col-2 {
+    flex-basis: 100%;
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .about-col-1 {
+    margin-bottom: 2rem;
+  }
+
+  .about-col-2 {
+    font-size: 1.25rem;
+  }
+
+  /* Enlaces de pestañas */
+  .tab-titles {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .tab-links {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    margin: 0;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.08);
+    transition: background 0.3s, color 0.3s;
+  }
+
+  .tab-links.active-link,
+  .tab-links:hover {
+    background: orangered;
+    color: #fff;
+  }
+
+  /* Contacto a pantalla completa */
+  .contact-left,
+  .contact-right {
+    flex-basis: 100%;
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  /* Copyright */
+  .copyright {
+    font-size: 1.25rem;
+  }
+
+  /* Lista de servicios */
+  .services-List {
+    height: auto;
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  /* Imágenes responsivas */
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
+/* Ajustes globales para evitar desbordamiento */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}

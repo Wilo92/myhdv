@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fanta Drink</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body class="naranja">
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <img src="img/logo.png" alt="" width="70px">
+                </li>
+                <li>inicio</li>
+                <li>productos</li>
+                <li>nosotros</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div>
+            <h1>naranja</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur 
+                adipisicing elit. Quam atque natus ipsa 
+                dignissimos suscipit eius optio?
+                 Praesentium quasi nisi, cum temporibus 
+                 repellendus dolores optio? Eos eaque hic 
+                 dolor accusamus eligendi!</p>
+                 <ul class="galeria">
+                    <li>
+                        <img src="img/fresa.png" alt="" width="40px" onmouseover="cambiaFondo('fresa')">
+                    </li>
+                    <li>
+                        <img src="img/naranja.png" alt="" width="40px" onmouseover="cambiaFondo('naranja')">
+                    </li>
+                    <li>
+                        <img src="img/pina.png" alt="" width="40px" onmouseover="cambiaFondo('pina')">
+                    </li>
+                    <li>
+                        <img src="img/uva.png" alt="" width="40px" onmouseover="cambiaFondo('uva')">
+                    </li> 
+
+                </ul>
+        </div>
+        <img src="img/naranja.png" alt="" width="200px" id="grande">
+    </main>
+
+    <footer>
+        <p>creado por @WILO</p>
+    </footer>
+
+    <script>
+        function cambiaFondo(sabor){
+            document.querySelector("#grande").setAttribute('src','img/' + sabor + '.png');
+            document.querySelector('body').setAttribute('class', sabor);
+            document.querySelector("h1").innerHTML = sabor;
+        }
+    </script>
+    
+</body>
+</html>

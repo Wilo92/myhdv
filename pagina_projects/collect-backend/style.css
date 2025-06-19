@@ -1,0 +1,96 @@
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background-color:black ;
+  font-family: helvetica;
+  font-size: 14px;
+  color: yellow;
+  margin: 0;
+  padding: 0;
+}
+/*CSS PARA LAS CARDS*/
+.swiper {
+  width: 100%;
+  padding: 50px 0px 20px 0px;
+}
+
+.swiper-slide {
+  width: 200px;
+  height: 400px;
+  background-color: #262626;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  padding: 40px;
+  text-align: center;
+}
+
+/*CSS PARA EL LOGO Y LOS ICONO DE FLECHA Y CORAZON*/
+.icons{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.icons i{
+    font-size: 20px;
+    color: orangered;
+
+}
+
+.icons img{
+    width: 100px;
+}
+
+/*CSS PARA LOS CONTENIDOS DE LAS CARDS*/
+.product-content{
+    display:table;
+    /*justify-content: space-between;*/
+
+}
+
+.product-txt{
+    flex-basis: 50px;
+    text-align: center;
+    
+}
+
+.product-txt span{
+    font-size: 25px;
+    color: rgba(5, 164, 247, 255);
+    font-weight: bold;
+}
+
+.product-txt h3{
+    font-size: 15px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.product-txt p{
+    font-size: 14px;
+    color: white;
+}
+
+.product-img{
+    flex-basis: 50%;
+    text-align: right;
+}
+
+.product-img img{
+    width: 200px;
+}
+
+.btn-1{
+    background: white;
+    display: inline-block;
+    padding: 13px 55px;
+    border: 1px solid pink;
+    border-radius: 25px;
+    color: orangered;
+    text-decoration: none;
+    margin-top: 10px;
+}
